@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Consulta médica",
       "day": "14/09 as 14:30",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Estudar Algoritmos e Estrutura de Dados",
       "day": "14/09 as 19:00",
-      "reminder": false
+      "reminder": true
     }
   ]
 }
