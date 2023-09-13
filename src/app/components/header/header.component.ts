@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title: string = 'Task Today';
+
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  toggleAddTask() {
+    console.log('Apertei o botão e emitir o evento');
+  }
 }
