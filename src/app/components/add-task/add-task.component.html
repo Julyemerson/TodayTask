@@ -1,13 +1,19 @@
-<form>
+<form class="add-form">
   <div class="form-control">
-    <label for="task">Tarefa</label>
-    <input id="task" name="task" type="text" placeholder="Adicionar Tarefa" />
+    <label for="text">Tarefa</label>
+    <input
+      id="text"
+      name="text"
+      type="text"
+      [(ngModel)]="text"
+      placeholder="Adicionar Tarefa"
+    />
   </div>
   <div class="form-control">
     <label for="day">Dia</label>
     <input id="day" name="day" type="text" placeholder="Dia e horario" />
   </div>
-  <div class="form-contro form-control-check">
+  <div class="form-control form-control-check">
     <label for="reminder">Adicionar Lembrança?</label>
     <input id="reminder" name="reminder" type="checkbox" />
   </div>

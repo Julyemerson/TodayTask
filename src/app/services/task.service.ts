@@ -15,7 +15,7 @@ export class TaskService {
   constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
-    return this.http.get<Task[]>(this.apiUrl);
+    return this.http.get<Task[]>(this.apiUrl, httpOptions);
   }
 
   deleteTask(task: Task): Observable<Task> {

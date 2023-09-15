@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Consulta médica",
       "day": "14/09 as 14:30",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 2,
