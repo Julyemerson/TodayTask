@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UiService } from '../../services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -6,13 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  title: string = 'Task Today';
+  constructor(private uiService: UiService) {}
 
-  constructor() {}
+  title: string = 'Task Today';
+  showAddTask: boolean = false;
+  subscription!: Subscription;
 
   ngOnInit(): void {}
 
   toggleAddTask() {
-    console.log('Apertei o botão e emitir o evento');
+    this.uiService.toggleAddTask();
   }
 }
